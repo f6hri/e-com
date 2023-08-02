@@ -1,12 +1,13 @@
 import { FiPhone, FiMail } from "react-icons/fi";
 import Container from "../shared/container";
+import HStack from "../shared/hStack";
 
 export default function TopBar() {
   return (
-    <div className="py-2 bg-gray-200">
+    <div className="py-2 bg-gray-200/25">
       <Container>
         <div className="flex justify-between items-center">
-          <div className="flex items-center gap-8">
+          <HStack spacing={10}>
             <a href="tel:+#" className="flex items-center gap-2 text-sm">
               <FiPhone />
               <span>0535 288 0593</span>
@@ -15,7 +16,7 @@ export default function TopBar() {
               <FiMail />
               <span>fahrimdemir@hotmail.com</span>
             </a>
-          </div>
+          </HStack>
         </div>
       </Container>
     </div>

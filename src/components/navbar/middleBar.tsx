@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 export default function MiddleBar() {
   return (
-    <div className="py-3">
+    <div className="py-5">
       <Container>
         <div className="flex items-center justify-between">
           <span className="flex items-center gap-1 text-4xl">
