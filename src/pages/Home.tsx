@@ -1,6 +1,6 @@
 import SEO from "../SEO";
 import Navbar from "../components/navbar";
-import Container from "../components/shared/container";
+import FairPriceSection from "../sections/fairPriceSection";
 import HeroSection from "../sections/heroSection";
 
 export default function Home() {
@@ -9,9 +9,8 @@ export default function Home() {
       <SEO title="Ana sayfa" />
       <Navbar />
       <main>
-        <Container>
-          <HeroSection />
-        </Container>
+        <HeroSection />
+        <FairPriceSection />
       </main>
     </>
   );

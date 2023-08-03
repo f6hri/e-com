@@ -4,9 +4,9 @@ import HStack from "../shared/hStack";
 
 export default function FootBar() {
   return (
-    <div className="bg-gray-200 py-2">
+    <div className="py-2 bg-gray-200/50">
       <Container>
-        <HStack spacing={8}>
+        <HStack spacing="gap-8">
           <Link to="#">
             <span className="font-medium text-sm">Telefon</span>
           </Link>

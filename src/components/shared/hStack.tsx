@@ -1,6 +1,6 @@
 interface hStackProps {
   children: React.ReactNode;
-  spacing: string | number;
+  spacing: string;
   customStyle?: string;
 }
 
@@ -10,7 +10,7 @@ export default function HStack({
   customStyle,
 }: hStackProps) {
   return (
-    <div className={`flex items-center gap-${spacing} ${customStyle}`}>
+    <div className={`flex items-center ${spacing} ${customStyle}`}>
       {children}
     </div>
   );
