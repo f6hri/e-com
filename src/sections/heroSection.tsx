@@ -1,4 +1,8 @@
+import { useState } from "react";
+import SolidButton from "../components/shared/buttons/solidButton";
+
 export default function HeroSection() {
+  const [loading, setLoading] = useState(false);
   return (
     <section className="relative">
       <img src="/stock/tv.jpg" width="100%" alt="tv" />
@@ -9,9 +13,13 @@ export default function HeroSection() {
             Lorem ipsum dolor sit amet consectetur, adipisicing elit.
             Voluptatibus fuga officia quaerat, exercitationem enim porro.
           </p>
-          <button className="px-9 py-3 bg-blue-500 rounded-md text-white font-semibold mt-4 hover:bg-blue-600">
-            Satın Al
-          </button>
+          <SolidButton
+            title="Satın Al"
+            isLoading={loading}
+            size="md"
+            onClick={() => setLoading(true)}
+            customStyle="mt-6"
+          />
         </div>
       </div>
     </section>

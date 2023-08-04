@@ -8,13 +8,13 @@ export default function FootBar() {
       <Container>
         <HStack spacing="gap-8">
           <Link to="#">
-            <span className="font-medium text-sm">Telefon</span>
+            <span className="font-medium text-sm hover:underline">Telefon</span>
           </Link>
           <Link to="#">
-            <span className="font-medium text-sm">Hazır Oyuncu Sistemi</span>
+            <span className="font-medium text-sm hover:underline">Hazır Oyuncu Sistemi</span>
           </Link>
           <Link to="#">
-            <span className="font-medium text-sm">Bilgisyar Bileşenleri</span>
+            <span className="font-medium text-sm hover:underline">Bilgisyar Bileşenleri</span>
           </Link>
         </HStack>
       </Container>
