@@ -1,12 +1,15 @@
 import { Link } from "react-router-dom";
-import SolidButton from "../shared/buttons/solidButton";
+import IconButton from "../shared/buttons/iconButton";
+import { FiHeart, FiShoppingCart, FiZoomIn } from "react-icons/fi";
 
 export default function SimpleProductCard() {
   return (
     <Link to="#">
       <div className="p-5 border border-gray-200/75 rounded-md max-w-[280px] relative">
-        <div className="absolute top-0 bottom-0 left-0 right-0 bg-gray-200/50 flex items-center justify-center opacity-0 hover:opacity-100">
-          <SolidButton title="Sepete Ekle" size="sm" />
+        <div className="absolute top-0 bottom-0 left-0 right-0 bg-gray-200/50 flex items-center justify-center opacity-0 hover:opacity-100 gap-2">
+          <IconButton icon={<FiShoppingCart />} />
+          <IconButton icon={<FiHeart />} />
+          <IconButton icon={<FiZoomIn />} />
         </div>
         <div className="flex flex-col items-center gap-4 text-center">
           <span className="text-xs">
